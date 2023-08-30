@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* NAVEGADOR */
+#header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+}
+
+.nav a {
+    background-color: rgb(107, 71, 158);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* INICIO */
+.seccion1 {
+    display: inline-block;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.seccion1 img {
+    width: 100vw;
+    height: 700px;
+}
+
+.seccion1 div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.seccion2 img{
+    width: 100%;
+}
+.seccion2 {
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    gap: 0px 0px;
+    grid-template-areas:
+        "img1 img2 texto"
+        "img3 img4 texto";
+    align-items: stretch
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.texto {
+    grid-area: texto;
+    align-self: center;
+    text-align: justify;
+}
+/* TRABAJOS */
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px 15px;
+    justify-items: stretch;
+    grid-template-areas:
+      "cancion1 cancion2 cancion3"
+      "cancion4 cancion5 cancion6"
+      "cancion7 cancion8 cancion9";
+    width: 100%;
+    height: 100%;
+  }
+  
+  .cancion1 { grid-area: cancion1; }
+  .cancion2 { grid-area: cancion2; }
+  .cancion3 { grid-area: cancion3; }
+  .cancion4 { grid-area: cancion4; }
+  .cancion5 { grid-area: cancion5; } 
+  .cancion6 { grid-area: cancion6; }
+  .cancion7 { grid-area: cancion7; }
+  .cancion8 { grid-area: cancion8; }
+  .cancion9 { grid-area: cancion9; }
+  
+
+/* PIE DE PAGINA */
+#footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}

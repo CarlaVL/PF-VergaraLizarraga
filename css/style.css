@@ -81,6 +81,10 @@
     text-align: justify;
 }
 /* TRABAJOS */
+h1 {text-align: center;
+padding: 10px 20px;
+margin: 5px 4px
+}
 .container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;

@@ -34,7 +34,7 @@
 
 .seccion1 img {
     width: 100vw;
-    height: 700px;
+    height: 100vh;
 }
 
 .seccion1 div {
@@ -56,7 +56,7 @@
     grid-template-areas:
         "img1 img2 texto"
         "img3 img4 texto";
-    align-items: stretch
+    align-items: stretch;
 }
 
 .img1 {
@@ -79,6 +79,8 @@
     grid-area: texto;
     align-self: center;
     text-align: justify;
+    margin: auto;
+    padding: 50px 50px;
 }
 /* TRABAJOS */
 h1 {text-align: center;
@@ -94,8 +96,8 @@ margin: 5px 4px
       "cancion1 cancion2 cancion3"
       "cancion4 cancion5 cancion6"
       "cancion7 cancion8 cancion9";
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
   }
   
   .cancion1 { grid-area: cancion1; }
@@ -111,7 +113,8 @@ margin: 5px 4px
 
 /* PIE DE PAGINA */
 #footer {
-    width: 100%;
+    width: 100vw;
+    height: 25vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -120,5 +123,4 @@ margin: 5px 4px
     color: white;
     position: relative;
     bottom: 0;
-    left: 0;
-}
+    left: 0;}

@@ -12,6 +12,7 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: white;
+    height: 15vh;
 }
 
 .nav a {
@@ -97,7 +98,7 @@ margin: 5px 4px
       "cancion4 cancion5 cancion6"
       "cancion7 cancion8 cancion9";
     width: 100vw;
-    height: 100vh;
+    height: 130vh;
   }
   
   .cancion1 { grid-area: cancion1; }
@@ -114,7 +115,7 @@ margin: 5px 4px
 /* PIE DE PAGINA */
 #footer {
     width: 100vw;
-    height: 25vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     flex-direction: column;

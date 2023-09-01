@@ -115,6 +115,7 @@ h1 {
     text-align: center;
     padding: 10px 20px;
     margin: auto;
+    color: white;
 }
 
 .container {
@@ -166,7 +167,12 @@ h1 {
 .cancion9 {
     grid-area: cancion9;
 }
-
+/* CONTACTO */
+.seccion-contacto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 /* PIE DE PAGINA */
 #footer {

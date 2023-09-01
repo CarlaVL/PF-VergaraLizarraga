@@ -94,6 +94,17 @@ body {
     background-color: rgb(107, 71, 158);
 }
 
+/* ESTUDIO */
+#carouselExampleCaptions{
+    height: fit-content;
+    margin: 50px 50px 50px 50px
+}
+.carousel-control-next-icon{
+    height: fit-content;
+}
+.carousel-inner{
+    height: fit-content;
+}
 /* TRABAJOS */
 h1 {
     text-align: center;

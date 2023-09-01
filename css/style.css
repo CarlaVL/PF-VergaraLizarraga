@@ -4,6 +4,10 @@
     font-family: sans-serif;
 }
 
+body {
+    background-image: url(https://i.pinimg.com/736x/57/62/2d/57622db6ac01fcd4d338a2d1f624065b.jpg);
+}
+
 /* NAVEGADOR */
 #header {
     display: flex;
@@ -12,7 +16,7 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: white;
-    height: 15vh;
+    height: 18vh;
 }
 
 .nav a {
@@ -44,9 +48,11 @@
     left: 50%;
     transform: translate(-50%, -50%)
 }
-.seccion2 img{
+
+.seccion2 img {
     width: 100%;
 }
+
 .seccion2 {
     width: 100%;
     height: 600px;
@@ -58,6 +64,8 @@
         "img1 img2 texto"
         "img3 img4 texto";
     align-items: stretch;
+    padding: 10px 10px ;
+    margin: 10px 10px 10px;
 }
 
 .img1 {
@@ -80,37 +88,69 @@
     grid-area: texto;
     align-self: center;
     text-align: justify;
-    margin: auto;
-    padding: 50px 50px;
+    margin: 50px 50px;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: rgb(107, 71, 158);
 }
+
 /* TRABAJOS */
-h1 {text-align: center;
-padding: 10px 20px;
-margin: 5px 4px
+h1 {
+    text-align: center;
+    padding: 10px 20px;
+    margin: 5px 4px
 }
-.container {  display: grid;
+
+.container {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 15px 15px;
     justify-items: stretch;
     grid-template-areas:
-      "cancion1 cancion2 cancion3"
-      "cancion4 cancion5 cancion6"
-      "cancion7 cancion8 cancion9";
+        "cancion1 cancion2 cancion3"
+        "cancion4 cancion5 cancion6"
+        "cancion7 cancion8 cancion9";
     width: 100vw;
     height: 130vh;
-  }
-  
-  .cancion1 { grid-area: cancion1; }
-  .cancion2 { grid-area: cancion2; }
-  .cancion3 { grid-area: cancion3; }
-  .cancion4 { grid-area: cancion4; }
-  .cancion5 { grid-area: cancion5; } 
-  .cancion6 { grid-area: cancion6; }
-  .cancion7 { grid-area: cancion7; }
-  .cancion8 { grid-area: cancion8; }
-  .cancion9 { grid-area: cancion9; }
-  
+}
+
+.cancion1 {
+    grid-area: cancion1;
+}
+
+.cancion2 {
+    grid-area: cancion2;
+}
+
+.cancion3 {
+    grid-area: cancion3;
+}
+
+.cancion4 {
+    grid-area: cancion4;
+}
+
+.cancion5 {
+    grid-area: cancion5;
+}
+
+.cancion6 {
+    grid-area: cancion6;
+}
+
+.cancion7 {
+    grid-area: cancion7;
+}
+
+.cancion8 {
+    grid-area: cancion8;
+}
+
+.cancion9 {
+    grid-area: cancion9;
+}
+
 
 /* PIE DE PAGINA */
 #footer {
@@ -124,4 +164,5 @@ margin: 5px 4px
     color: white;
     position: relative;
     bottom: 0;
-    left: 0;}
+    left: 0;
+}

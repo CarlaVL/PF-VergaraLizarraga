@@ -49,14 +49,15 @@ a:hover {
     .nav a {
         margin: 2px;
         padding: 8px;
-        width: 114vw;
-        text-justify:auto ;
+        width: 30vw;
     }
 
     ul {
         display: flex;
         padding: 0;
-        width: 114vw;
+        width: 100vw;
+        flex-wrap: wrap;
+        justify-content: center
     }
 }
 
@@ -216,6 +217,14 @@ h1 {
 .cancion9 {
     grid-area: cancion9;
 }
+/* media querie trabajos */
+@media (max-width: 480px) {
+    .container{
+        display: inline-flex;
+        flex-direction: column;
+        height: 214vh;
+    }
+}
 
 /* CONTACTO */
 .seccion-contacto {
@@ -236,6 +245,18 @@ h1 {
     height: 50px;
     background: none;
 }
+/* media querie contacto */
+@media (max-width: 480px) {
+    .seccion-contacto {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center        
+    }
+   .estilo-contacto{
+     width: 80vw;
+   }
+}
 
 /* PIE DE PAGINA */
 #footer {
@@ -255,7 +276,7 @@ h1 {
 /* media querie footer */
 @media (max-width: 480px) {
     #footer {
-        height: 33vh;
+        height: 39vh;
         width: 100vw;
     }
 }

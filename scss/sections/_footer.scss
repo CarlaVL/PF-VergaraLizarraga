@@ -1,0 +1,23 @@
+
+/* PIE DE PAGINA */
+#footer {
+    width: 100vw;
+    height: 34vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+/* media querie footer */
+@media (max-width: 480px) {
+    #footer {
+        height: 39vh;
+        width: 100vw;
+    }
+}

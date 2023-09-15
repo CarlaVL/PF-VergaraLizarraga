@@ -1,0 +1,84 @@
+/* INICIO */
+.seccion1 {
+    display: inline-block;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.seccion1 img {
+    width: 100vw;
+    height: 100vh;
+}
+
+.seccion1 div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.seccion2 img {
+    width: 100%;
+}
+
+.seccion2 {
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    gap: 0px 0px;
+    grid-template-areas:
+        "img1 img2 texto"
+        "img3 img4 texto";
+    align-items: stretch;
+    padding: 10px 10px;
+    margin: 10px 10px 10px;
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.texto {
+    grid-area: texto;
+    align-self: center;
+    text-align: justify;
+    margin: 50px 50px;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: rgb(107, 71, 158);
+}
+
+/* media querie inicio */
+@media (max-width: 480px) {
+    .texto {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .seccion2 img {
+        display: none;
+    }
+
+    .seccion2 {
+        display: inline;
+        margin: 0;
+
+    }
+
+}

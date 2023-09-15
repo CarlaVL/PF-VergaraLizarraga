@@ -1,0 +1,50 @@
+/* NAVEGADOR */
+#header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    height: 150px;
+}
+.nav a {
+    background-color: rgb(107, 71, 158);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+a:hover {
+    padding: 22px;
+    background-color: rgb(79, 51, 117);
+    color: grey;
+}
+
+/* MEDIA QUERIE navbar*/
+@media (max-width: 480px) {
+    body{
+        width: 100vw;
+    }
+    #header {
+        display: flex;
+        height: 30vh;
+        width: 100vw;
+    }
+
+    .nav a {
+        margin: 2px;
+        padding: 8px;
+        width: 30vw;
+    }
+
+    ul {
+        display: flex;
+        padding: 0;
+        width: 100vw;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+}

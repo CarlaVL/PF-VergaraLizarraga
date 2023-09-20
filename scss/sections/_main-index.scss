@@ -15,9 +15,30 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
-
+.seccion1 h1{
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+.seccion1 h2{
+    animation-duration: 4s;
+    animation-name: slidein;
+}
+.seccion1 p{
+    animation-duration: 6s;
+    animation-name: slidein;
+}
+@keyframes slidein{
+    from {
+        margin-left: 100%;
+        width: 300%;   
+     }
+    to{
+        margin-left: 0%;
+    width: 100%;  
+    }
+}
 .seccion2 img {
     width: 100%;
 }
@@ -60,7 +81,12 @@
     margin: 30px 30px;
     padding: 10px;
     color: whitesmoke;
-    background-color: rgb(107, 71, 158);
+    background: linear-gradient(rgba(2, 2, 245, 0.6), rgba(107, 71, 158, 0.726), rgba(139, 139, 139, 0.733));
+    border-radius: 3px;
+    transition: all 0.7s;
+}
+.texto:hover{
+    background-color: rgba(194, 192, 192, 0.74);
 }
 
 /* media querie inicio */
@@ -80,5 +106,8 @@
         margin: 0;
 
     }
-
+    .seccion1 img {
+        width: 100vw;
+        height: 50vh;
+    }
 }

@@ -26,10 +26,11 @@ body {
   margin: 20px;
   padding: 20px;
   border-radius: 15px;
-  font-family: Kanit; }
+  font-family: Kanit;
+  transition: all 0.3s; }
 
 a:hover {
-  padding: 22px;
+  padding: 25px;
   background-color: #4f3375;
   color: grey; }
 
@@ -54,6 +55,12 @@ a:hover {
   .nav il {
     padding-top: 15px; } }
 
+@media (max-width: 390px) {
+  #header {
+    display: flex;
+    height: 40vh;
+    width: 100vw; } }
+
 /* INICIO */
 .seccion1 {
   display: inline-block;
@@ -70,6 +77,22 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+.seccion1 h1 {
+  animation-duration: 2s;
+  animation-name: slidein; }
+
+.seccion1 h2 {
+  animation-duration: 4s;
+  animation-name: slidein; }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
 
 .seccion2 img {
   width: 100%; }
@@ -105,7 +128,12 @@ a:hover {
   margin: 30px 30px;
   padding: 10px;
   color: whitesmoke;
-  background-color: #6b479e; }
+  background: linear-gradient(rgba(2, 2, 245, 0.6), rgba(107, 71, 158, 0.726), rgba(139, 139, 139, 0.733));
+  border-radius: 3px;
+  transition: all 0.7s; }
+
+.texto:hover {
+  background-color: rgba(194, 192, 192, 0.74); }
 
 /* media querie inicio */
 @media (max-width: 1100px) {
@@ -116,7 +144,10 @@ a:hover {
     display: none; }
   .seccion2 {
     display: inline;
-    margin: 0; } }
+    margin: 0; }
+  .seccion1 img {
+    width: 100vw;
+    height: 50vh; } }
 
 /* ESTUDIO */
 #carouselExampleCaptions {
@@ -199,14 +230,22 @@ h1 {
   background-color: none; }
 
 /* media querie contacto */
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .seccion-contacto {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center; }
   .estilo-contacto {
-    width: 80vw; } }
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column; } }
+
+@media (max-width: 580px) {
+  .inframe-maps {
+    width: 70vw; } }
 
 /* PIE DE PAGINA */
 #footer {
@@ -241,4 +280,9 @@ h1 {
 @media (max-width: 1310px) {
   #footer {
     height: 39vh;
+    width: 100vw; } }
+
+@media (max-width: 375px) {
+  #footer {
+    height: 43vh;
     width: 100vw; } }

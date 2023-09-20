@@ -18,9 +18,10 @@
     padding: 20px;
     border-radius: 15px;
     font-family: Kanit;
+    transition: all 0.3s;
 }
 a:hover {
-    padding: 22px;
+    padding: 25px;
     background-color: rgb(79, 51, 117);
     color: grey;
 }
@@ -51,4 +52,10 @@ a:hover {
     .nav il{
         padding-top: 15px;
     }
+}
+@media (max-width: 390px){
+    #header {
+        display: flex;
+        height: 40vh;
+        width: 100vw;}
 }

@@ -19,7 +19,7 @@
 }
 
 /* media querie contacto */
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     .seccion-contacto {
         display: flex;
         flex-wrap: wrap;
@@ -28,5 +28,14 @@
     }
    .estilo-contacto{
      width: 80vw;
+     display: flex;
+     align-items: center;
+     align-content: center;
+     flex-direction: column;
    }
+}
+@media (max-width: 580px) {
+.inframe-maps{
+    width: 70vw;
+}
 }

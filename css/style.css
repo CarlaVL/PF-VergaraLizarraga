@@ -86,6 +86,10 @@ a:hover {
   animation-duration: 4s;
   animation-name: slidein; }
 
+.seccion1 p {
+  animation-duration: 6s;
+  animation-name: slidein; }
+
 @keyframes slidein {
   from {
     margin-left: 100%;

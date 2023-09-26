@@ -1,11 +1,4 @@
 /* TRABAJOS */
-h1 {
-    text-align: center;
-    padding: 10px 20px;
-    margin: auto;
-    color: white;
-}
-
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -18,42 +11,34 @@ h1 {
         "cancion7 cancion8 cancion9";
     width: 100vw;
     height: 145vh;
-}
 
-.cancion1 {
-    grid-area: cancion1;
-}
-
-.cancion2 {
-    grid-area: cancion2;
-}
-
-.cancion3 {
-    grid-area: cancion3;
-}
-
-.cancion4 {
-    grid-area: cancion4;
-}
-
-.cancion5 {
-    grid-area: cancion5;
-}
-
-.cancion6 {
-    grid-area: cancion6;
-}
-
-.cancion7 {
-    grid-area: cancion7;
-}
-
-.cancion8 {
-    grid-area: cancion8;
-}
-
-.cancion9 {
-    grid-area: cancion9;
+    .cancion1 {
+        grid-area: cancion1;
+    }
+    .cancion2 {
+        grid-area: cancion2;
+    }
+    .cancion3 {
+        grid-area: cancion3;
+    }
+    .cancion4 {
+        grid-area: cancion4;
+    }
+    .cancion5 {
+        grid-area: cancion5;
+    }
+    .cancion6 {
+        grid-area: cancion6;
+    }
+    .cancion7 {
+        grid-area: cancion7;
+    }
+    .cancion8 {
+        grid-area: cancion8;
+    }
+    .cancion9 {
+        grid-area: cancion9;
+    }
 }
 /* media querie trabajos */
 @media (max-width: 570px) {

@@ -2,7 +2,7 @@
 /* PIE DE PAGINA */
 #footer {
     width: 100vw;
-    height: 31vh;
+    height: 33vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -12,33 +12,27 @@
     position: relative;
     bottom: 0;
     left: 0;
-}
-#footer p{
-    margin: 15px;
-    padding-bottom: 5px;
-}
-.redes-sociales{
-    display: inline-flexbox;
-    padding-bottom: 0;
-}
-.redes-sociales a {
-    margin: 35px;
-    padding: 10px 10px 10px 10px;
-}
-.redes-sociales a:hover{
-    background: none;
-}
-
-/* media querie footer */
-@media (max-width: 1310px) {
-    #footer {
-        height: 39vh;
-        width: 100vw;
+    .redes-sociales{
+        display: inline-flexbox;
+        padding-bottom: 0;
+        a {
+            margin: 35px;
+            padding: 10px 10px 10px 10px;
+        }
+        a:hover{
+            background: none;
+        }
+    }
+    p{
+        margin: 15px;
+        padding-bottom: 5px;
     }
 }
-@media (max-width: 375px) {
+/* media querie footer */
+@media (max-width: 1320px) {
     #footer {
         height: 43vh;
         width: 100vw;
     }
 }
+

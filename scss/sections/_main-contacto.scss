@@ -3,36 +3,34 @@
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
+    .estilo-contacto {
+        padding: 15px;
+        margin: 30px;
+        border: solid 2px grey;
+        color: white;
+        a{
+            padding: 4px;
+        }
+        a:hover{
+            background-color: none;
+        }
+    }
 }
-
-.estilo-contacto {
-    padding: 15px;
-    margin: 30px;
-    border: solid 2px grey;
-    color: white;
-}
-.estilo-contacto a{
-    padding: 4px;
-}
-.estilo-contacto a:hover{
-    background-color: none;
-}
-
 /* media querie contacto */
 @media (max-width: 800px) {
     .seccion-contacto {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        align-items: center        
+        align-items: center;   
+        .estilo-contacto{
+            width: 80vw;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            flex-direction: column;
+          }     
     }
-   .estilo-contacto{
-     width: 80vw;
-     display: flex;
-     align-items: center;
-     align-content: center;
-     flex-direction: column;
-   }
 }
 @media (max-width: 580px) {
 .inframe-maps{
